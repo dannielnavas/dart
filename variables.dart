@@ -1,8 +1,8 @@
 void main() {
-    String name = 'John';
-    int age = 25;
-    double height = 1.75;
-    bool isStudent = true;
+    String name = 'John'; // cadema de caracteres
+    int age = 25; // tiene  un limite
+    double height = 1.75; // toma mas memoria que int
+    bool isStudent = true; // Valores booleanos
     List<String> friends = ['Peter', 'Paul', 'Mary'];
     print('Name: $name');
     print('Age: $age');
