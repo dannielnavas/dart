@@ -3,7 +3,25 @@ void main() {
     int age = 25; // tiene  un limite
     double height = 1.75; // toma mas memoria que int
     bool isStudent = true; // Valores booleanos
-    List<String> friends = ['Peter', 'Paul', 'Mary'];
+    List<String> friends = ['Peter', 'Paul', 'Mary']; // colecciones
+
+    // avanzados
+    var nombre = 'John'; // cadema de caracteres
+    nombre = 25; // No permitido porque ya se declaro como string
+
+    // final y const
+
+    final String nombreFinal = 'John'; // este no cumple lo de const, funciona igual que const no puede ser modificado
+    const String nombreConst = 'John'; // valor conocido en tiempo de compilación, funciona como js es una constante no puede ser modificada
+
+    // dinamic
+
+    dynamic variableDinamica = 'John'; // puede cambiar de tipo de dato, usado en colecciones
+    variableDinamica = 25; // permitido porque es dinamico, parece a un any
+
+
+
+    // Impresiones
     print('Name: $name');
     print('Age: $age');
     print('Height: $height');
