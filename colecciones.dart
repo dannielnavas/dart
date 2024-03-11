@@ -60,4 +60,31 @@ void main() {
   print(numerosSet); // {}
 
 
+  // map
+  Map<String, dynamic> persona = {
+    'nombre': 'Juan',
+    'edad': 30,
+    'soltero': true
+  };
+  print(persona); // {nombre: Juan, edad: 30, soltero: true}
+  print(persona['nombre']); // Juan
+  print(persona['edad']); // 30
+  print(persona['soltero']); // true
+  persona['soltero'] = false;
+  print(persona); // {nombre: Juan, edad: 30, soltero: false}
+  persona.addAll({'altura': 1.80, 'peso': 80});
+  print(persona); // {nombre: Juan, edad: 30, soltero: false, altura: 1.8, peso: 80}
+  persona.remove('peso');
+  print(persona); // {nombre: Juan, edad: 30, soltero: false, altura: 1.8}
+  print(persona.length); // 4
+  print(persona.isEmpty); // false
+  print(persona.isNotEmpty); // true
+  print(persona.keys); // (nombre, edad, soltero, altura)
+  print(persona.values); // (Juan, 30, false, 1.8)
+  print(persona.entries); // (MapEntry(nombre: Juan), MapEntry(edad: 30), MapEntry(soltero: false), MapEntry(altura: 1.8))
+  persona.clear();
+  print(persona); // {}
+
+
+
 }
