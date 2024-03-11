@@ -38,4 +38,26 @@ void main() {
   numeros.clear();
   print(numeros); // []
 
+
+  // set
+  Set<int> numerosSet = {1, 2, 3, 4, 5, 5, 5, 5, 5}; // no permite elementos duplicados
+  print(numerosSet); // {1, 2, 3, 4, 5}
+  numerosSet.add(6);
+  print(numerosSet); // {1, 2, 3, 4, 5, 6}
+
+  for(int i = 0; i < numerosSet.length; i++) {
+    print(numerosSet.elementAt(i));
+  }
+
+  numerosSet.remove(6);
+  print(numerosSet); // {1, 2, 3, 4, 5}
+  print(numerosSet.contains(3)); // true
+  print(numerosSet.contains(6)); // false
+  print(numerosSet.isEmpty); // false
+  print(numerosSet.isNotEmpty); // true
+  print(numerosSet.length); // 5
+  numerosSet.clear();
+  print(numerosSet); // {}
+
+
 }
