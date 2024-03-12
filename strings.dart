@@ -11,12 +11,12 @@ void main() {
   print(message); // Output: Hello, Danny
 
   // interpolación
-  String message = "$greeting "\$name \"  \n y vivo en  \t Colombia";
+  String message = "$greeting "\$name\"  \n y vivo en  \t Colombia";
 
   // toUppercase, toLowerCase y replaceAll
 
   print(name.toLowerCase());
-  print(name.toUppercase());
+  print(name.toUpperCase());
   print(message.replaceAll("Colombia", "Mexico"));
 
 }
